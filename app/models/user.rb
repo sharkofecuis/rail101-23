@@ -22,5 +22,6 @@ class User < ApplicationRecord
   def quit!(group)
     participated_groups.delete(group)
   end
-  
+
+
 end
