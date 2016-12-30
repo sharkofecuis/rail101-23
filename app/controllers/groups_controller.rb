@@ -1,9 +1,11 @@
-cclass Account::GroupsController < ApplicationController
+class Account::GroupsController < ApplicationController
   before_action :authenticate_user!
 
   def index
     @groups = current_user.participated_groups
   end
+end
+
 
 
   def show
@@ -87,4 +89,3 @@ cclass Account::GroupsController < ApplicationController
     end
 
   end
-end
