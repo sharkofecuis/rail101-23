@@ -29,6 +29,7 @@ class GroupsController < ApplicationController
       render :new
     end
   end
+  
 
   def update
     @group = Group.find(params[:id])
